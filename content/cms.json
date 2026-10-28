@@ -1,0 +1,150 @@
+{
+  "source": "Owner-provided Webflow CSV exports",
+  "blogs": [
+    {
+      "name": "Best Wine Pairings for Sushi",
+      "slug": "sushi-pairing-wine",
+      "body": "<h1>Wine and Sushi</h1><p>Pairing wine with sushi can enhance the dining experience. The delicate flavors of sushi can be complemented by a variety of wines. For example, a crisp Sauvignon Blanc pairs well with the freshness of sashimi, while a light Pinot Noir can enhance the flavors of richer fish like salmon.</p><h2>Experimenting with Pairings</h2><p>Don’t be afraid to experiment with different wines. The key is to balance the flavors of the wine with the ingredients in the sushi. Enjoying sushi with the right wine can elevate your meal to new heights.</p>",
+      "summary": "Discover the best wine pairings to enhance your sushi experience.",
+      "image": "images/cms/69d3827c84c04f6a3fb549bc_blog_2_2_11zon.webp",
+      "date": "Wed Oct 04 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"
+    },
+    {
+      "name": "Techniques for Perfect Sushi Rolling",
+      "slug": "sushi-making-techniques",
+      "body": "<h1>Mastering Sushi Rolling</h1><p>Rolling sushi may seem daunting, but with practice, anyone can master it. Start by laying a sheet of nori on a bamboo mat, then spread a thin layer of sushi rice evenly over the nori. Place your desired fillings in the center and roll tightly, using the mat to guide you.</p><h2>Tips for Success</h2><p>Keep a bowl of water nearby to wet your hands, preventing the rice from sticking. Additionally, practice makes perfect; don’t be discouraged by initial attempts. With time, you will create beautiful sushi rolls.</p>",
+      "summary": "Learn the techniques for rolling sushi perfectly.",
+      "image": "images/cms/69d3828c24c25bb00c2c762c_blog_3_3_11zon.webp",
+      "date": "Tue Oct 03 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"
+    },
+    {
+      "name": "Essential Ingredients for Making Sushi",
+      "slug": "sushi-ingredients-guide",
+      "body": "<h1>Key Ingredients</h1><p>To create authentic sushi, you need high-quality ingredients. The primary components include sushi rice, nori (seaweed), fresh fish, and various vegetables. Sushi rice is seasoned with rice vinegar, sugar, and salt, giving it a unique flavor that complements the fish.</p><h2>Choosing Fresh Fish</h2><p>When selecting fish, freshness is paramount. Look for fish that is bright in color and has a clean smell. Popular choices include tuna, salmon, and eel. Additionally, consider using vegetables like cucumber and avocado for added texture and flavor.</p>",
+      "summary": "A guide to the essential ingredients needed for making sushi.",
+      "image": "images/cms/69d3829c375d25f1ea8c858c_blog_4_4_11zon.webp",
+      "date": "Mon Oct 02 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"
+    },
+    {
+      "name": "Sushi 101: An Introduction to the Art of Sushi Making",
+      "slug": "sushi-101-introduction",
+      "body": "<h1>Understanding Sushi</h1><p>Sushi is not just a dish; it is an art form that has been perfected over centuries in Japan. The combination of vinegared rice, fresh fish, and various ingredients creates a culinary experience that is both delightful and intricate. In this post, we will explore the different types of sushi, the ingredients used, and the techniques involved in making sushi at home.</p><h2>Types of Sushi</h2><ul><li><strong>Nigiri</strong>: Hand-formed rice topped with fish.</li><li><strong>Maki</strong>: Rolled sushi with rice and fillings.</li><li><strong>Sashimi</strong>: Sliced raw fish served without rice.</li></ul><p>Each type has its unique preparation method and flavor profile, making sushi a versatile dish.</p>",
+      "summary": "An introduction to sushi, its types, and the art of making it.",
+      "image": "images/cms/69d382a770dba2bd8c085fb4_blog_5_5_11zon.webp",
+      "date": "Sun Oct 01 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"
+    }
+  ],
+  "menu": {
+    "makis": [
+      {
+        "name": "MAKI Black Ember",
+        "slug": "maki-black-ember",
+        "price": 6,
+        "description": "A rich and deep-flavored roll with tender rice, grilled eel, and unagi sauce. Its warm, slightly smoky profile creates a bold and satisfying experience for those who enjoy intense, layered tastes.",
+        "image": "images/cms/69d61b29d8f2419187e747e3_MAKI_Black_Ember.webp"
+      },
+      {
+        "name": "MAKI Ocean Whisper",
+        "slug": "maki-ocean-whisper",
+        "price": 4,
+        "description": "A light and fresh roll with salmon, avocado, and cream cheese. Its delicate texture and smooth flavor feel like a breath of ocean air, clean, balanced, and effortlessly enjoyable.",
+        "image": "images/cms/69d61b17af59f0c0ab7e42d1_MAKI_Ocean_Whisper.webp"
+      },
+      {
+        "name": "MAKI Green Harmony",
+        "slug": "maki-green-harmony",
+        "price": 5,
+        "description": "A refreshing combination of cucumber, avocado, and cream cheese. Clean, soft, and well-balanced, this roll is perfect for those who appreciate simplicity and natural, fresh ingredients.",
+        "image": "images/cms/69d61b07817690067d364577_MAKI_Green_Harmony.webp"
+      },
+      {
+        "name": "MAKI Fire Tempura",
+        "slug": "maki-fire-tempura",
+        "price": 4.5,
+        "description": "A crispy tempura roll with a juicy filling and a slightly spicy sauce. The contrast of crunch and softness creates a vibrant, warm flavor that stands out with every bite.",
+        "image": "images/cms/69d61addc2960dd1e71b7b44_MAKI_Fire_Tempura.webp"
+      },
+      {
+        "name": "MAKI Golden Drift",
+        "slug": "maki-golden-drift",
+        "price": 6,
+        "description": "An elegant roll with shrimp, mango, and a light sweet sauce. A gentle fusion of flavors that delivers a smooth, slightly sweet finish and a refined tasting experience.",
+        "image": "images/cms/69d61ace48451b2204c36570_MAKI_Golden_Drift.webp"
+      }
+    ],
+    "uramakis": [
+      {
+        "name": "URAMAKI Shadow Flame",
+        "slug": "uramaki-shadow-flame",
+        "price": 7,
+        "description": "A bold roll with spicy tuna, avocado, and a rich sauce. Smooth yet fiery, it builds a gentle heat that lingers, creating a dynamic and memorable flavor experience.",
+        "image": "images/cms/69d643756151268adbcc1a81_URAMAKI_Shadow_Flame.webp"
+      },
+      {
+        "name": "URAMAKI Crystal Wave",
+        "slug": "uramaki-crystal-wave",
+        "price": 5.5,
+        "description": "A fresh and clean roll with salmon, cucumber, and cream cheese. Light, silky, and balanced, it delivers a smooth taste that feels refreshing and effortlessly refined.",
+        "image": "images/cms/69d6435d0dd5103643f1a1ba_URAMAKI_Crystal_Wave.webp"
+      },
+      {
+        "name": "URAMAKI Golden Tempest",
+        "slug": "uramaki-golden-tempest",
+        "price": 4.5,
+        "description": "A crispy tempura roll with shrimp, avocado, and a sweet-savory glaze. Crunch meets softness in a vibrant combination that feels rich, warm, and deeply satisfying.",
+        "image": "images/cms/69d6434277c56b963f3c73da_URAMAKI_Golden_Tempest.webp"
+      },
+      {
+        "name": "URAMAKI Emerald Flow",
+        "slug": "uramaki-emerald-flow",
+        "price": 5.5,
+        "description": "A green-inspired roll with avocado, cucumber, and a light creamy touch. Fresh, delicate, and well-balanced, it brings a calm and natural flavor with every bite.",
+        "image": "images/cms/69d6432c34ffff96efd27574_URAMAKI_Emerald_Flow.webp"
+      },
+      {
+        "name": "URAMAKI Ruby Fusion",
+        "slug": "uramaki-ruby-fusion",
+        "price": 6,
+        "description": "A refined roll with tuna, mango, and a hint of sweet sauce. Juicy and slightly exotic, it blends richness and freshness into a smooth, elegant taste journey.",
+        "image": "images/cms/69d6431ed46b39af814e0eae_URAMAKI_Ruby_Fusion.webp"
+      }
+    ],
+    "specialRolls": [
+      {
+        "name": "Special Roll Dragon Inferno",
+        "slug": "special-roll-dragon-inferno",
+        "price": 10,
+        "description": "Special Roll Dragon Inferno A fiery roll with spicy tuna, avocado, and a bold chili glaze. Intense yet balanced, it delivers a rising heat that builds with every bite and leaves a warm, unforgettable finish.",
+        "image": "images/cms/69d6533fcb44f73de777f8e6_Special_Roll_Dragon_Inferno.webp"
+      },
+      {
+        "name": "Special Roll Dragon Eclipse",
+        "slug": "special-roll-dragon-eclipse",
+        "price": 14,
+        "description": " A rich roll with eel, cream cheese, and a dark sweet-savory sauce. Deep, smooth, and slightly smoky, it creates a насыщений, almost mysterious flavor experience.",
+        "image": "images/cms/69d6537bbdb84e279ffb4213_Special_Roll_Dragon_Eclipse.webp"
+      },
+      {
+        "name": "Special Roll Velvet Storm ",
+        "slug": "special-roll-velvet-storm",
+        "price": 9,
+        "description": "A dynamic mix of shrimp, avocado, and creamy sauce with a crispy topping. Soft and crunchy textures collide, delivering a bold yet smooth taste in every bite.",
+        "image": "images/cms/69d653ba4440d86fe975fce1_Special_Roll_Velvet_Storm.webp"
+      },
+      {
+        "name": "Special Roll Citrus Ember",
+        "slug": "special-roll-citrus-ember",
+        "price": 12,
+        "description": " A bright roll with salmon, mango, and a light citrus glaze. Fresh, juicy, and slightly sweet, it balances vibrant acidity with a soft, delicate texture.",
+        "image": "images/cms/69d653e997fbd8db8aacdcc3_Special_Roll_Citrus_Ember.webp"
+      },
+      {
+        "name": "Special Roll Crimson Lotus",
+        "slug": "special-roll-crimson-lotus",
+        "price": 9.5,
+        "description": "A refined roll with tuna, cucumber, and a silky sauce. Clean, elegant, and lightly refreshing, it offers a graceful balance of flavor with a smooth finish.",
+        "image": "images/cms/69d65425c4e88629b2514f59_Special_Roll_Crimson_Lotus.webp"
+      }
+    ]
+  }
+}

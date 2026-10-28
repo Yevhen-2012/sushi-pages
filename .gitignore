@@ -1,0 +1,5 @@
+*.zip
+.migration/
+node_modules/
+detail_*.html
+blog-single.html
