@@ -905,7 +905,7 @@
 .menu_hidden-link-label::before {
   content: "";
   position: absolute;
-  inset: calc(-1 * var(--xxs)) calc(-1 * var(--s-size));
+  inset: -2px;
   z-index: -1;
   pointer-events: none;
   border-radius: var(--xs-size);
