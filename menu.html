@@ -204,6 +204,31 @@
   .menu_inner-wraper {
     padding-inline: clamp(var(--s-size), 10vw - 5rem, var(--l-size));
   }
+  .menu_item-content-wraper {
+    min-width: 0;
+  }
+  .h5-menu {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .menu_header-wraper .about_hours-line {
+    flex: 1;
+  }
+  .menu_price-wraper {
+    flex-shrink: 0;
+  }
+}
+@media (991px < width < 1200px) {
+  .menu_content-wraper {
+    gap: var(--xxs);
+  }
+  .menu_text-link,
+  .menu_img-link {
+    padding-inline: var(--xs-size);
+  }
+  .menu_logo {
+    height: 26px;
+  }
 }
 </style>
 </body>
