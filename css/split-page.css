@@ -1,0 +1,28 @@
+/* Opt in on interior pages with a left visual and a right content panel. */
+@media (width > 991px) {
+  body.split-page {
+    overflow: hidden;
+  }
+
+  .split-page__layout {
+    height: 100vh;
+    height: 100dvh;
+    grid-template: minmax(0, 1fr) / repeat(2, minmax(0, 1fr));
+  }
+
+  .split-page__visual {
+    height: auto;
+  }
+
+  .split-page__scroll {
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, currentColor 40%, transparent) transparent;
+  }
+
+  .split-page__scroll:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: -2px;
+  }
+}
