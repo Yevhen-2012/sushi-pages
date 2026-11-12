@@ -889,6 +889,52 @@
   font-size: 42px;
   line-height: 110%;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+  isolation: isolate;
+  transition: color 180ms ease-out, text-shadow 180ms ease-out;
+}
+
+.menu_hidden-link::before {
+  content: "";
+  position: absolute;
+  inset: -4px 8%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse closest-side,
+    color-mix(in srgb, var(--base_lighte_color_main) 18%, transparent),
+    color-mix(in srgb, var(--base_lighte_color_main) 8%, transparent) 55%,
+    transparent);
+  opacity: 0;
+  transition: opacity 180ms ease-out;
+}
+
+.menu_hidden-link:focus-visible {
+  color: #fff;
+  outline: 1px solid var(--base_lighte_color_main);
+  outline-offset: -2px;
+}
+
+.menu_hidden-link:focus-visible::before {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .menu_hidden-link:hover {
+    color: #fff;
+    text-shadow: 0 0 12px color-mix(in srgb, var(--base_lighte_color_main) 34%, transparent);
+  }
+
+  .menu_hidden-link:hover::before {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu_hidden-link,
+  .menu_hidden-link::before {
+    transition: none;
+  }
 }
 
 .menu_drop_down_wraper {
