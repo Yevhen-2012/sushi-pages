@@ -16,7 +16,8 @@
 
   .split-page__visual > .hero-heading-position {
     left: clamp(2rem, 10vw - 5rem, 5rem);
-    font-size: clamp(5rem, 8vw, 7rem);
+    bottom: clamp(2rem, 14dvh, 5rem);
+    font-size: min(clamp(5rem, 8vw, 7rem), 23dvh);
   }
 
   .split-page__scroll {
@@ -39,6 +40,10 @@
   .split-page__scroll .content-wraper-text,
   .split-page__scroll .blog_wrapper-inner {
     padding-inline: clamp(var(--s-size), 10vw - 5rem, var(--m-size));
+  }
+
+  .split-page__scroll .contact_content-grid .content-wraper-text {
+    padding-inline: clamp(var(--s-size), 12.5vw - 8.5rem, var(--m-size));
   }
 
   .split-page__scroll .blog_item-wraper {
@@ -78,5 +83,19 @@
 
   .split-page .menu_logo {
     height: 26px;
+  }
+}
+
+@media (width > 991px) and (height < 500px) {
+  .split-page .menu_hidden-wraper {
+    padding-block: var(--s-size);
+  }
+
+  .split-page .menu_hidden-link-wraper {
+    gap: var(--xs-size);
+  }
+
+  .split-page .menu_hidden-link {
+    font-size: clamp(1.25rem, 7dvh, 2.625rem);
   }
 }
