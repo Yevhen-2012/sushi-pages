@@ -201,22 +201,27 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
+.menu_item-content-wraper {
+  min-width: 0;
+}
+.h5-menu {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.menu_header-wraper .about_hours-line {
+  flex: 1;
+}
+.menu_price-wraper {
+  flex-shrink: 0;
+}
 @media (width > 991px) {
   .menu_inner-wraper {
     padding-inline: clamp(var(--s-size), 10vw - 5rem, var(--l-size));
   }
+}
+@media (479px < width <= 991px) {
   .menu_item-content-wraper {
-    min-width: 0;
-  }
-  .h5-menu {
-    white-space: normal;
-    overflow-wrap: anywhere;
-  }
-  .menu_header-wraper .about_hours-line {
-    flex: 1;
-  }
-  .menu_price-wraper {
-    flex-shrink: 0;
+    row-gap: var(--xs-size);
   }
 }
 </style>

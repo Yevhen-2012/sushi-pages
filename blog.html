@@ -176,6 +176,25 @@
     border-color 0.3s ease,
     opacity 0.3s ease;
 }
+@media (width <= 991px) {
+  .shadow-wraper {
+    display: none;
+  }
+  .blog_text-wraper {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+@media (479px < width <= 767px) {
+  .blog_item-wraper {
+    gap: var(--s-size);
+  }
+  .blog_content-img {
+    align-self: flex-start;
+    width: min(40%, 17rem);
+    height: auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .shadow-wraper.is-hovered {
     box-shadow:
