@@ -46,7 +46,7 @@ assert.equal((menu.match(/class="menu_collection-item w-dyn-item"/g) ?? []).leng
 assert.equal(cms.blogs.length, 4);
 const reservation = await fs.readFile('reservation.html', 'utf8');
 assert(reservation.includes('disabled aria-disabled="true"'));
-assert(reservation.includes('This form does not send requests.'));
+assert(reservation.includes('Demo. This form does not send booking requests.'));
 assert(reservation.includes('js/reservation.js'));
 if (failures.length) throw new Error(failures.join('\n'));
 console.log(`PASS: ${files.length} pages, ${links} local references, 15 menu items, 4 published articles; form submission disabled.`);

@@ -138,8 +138,8 @@ for (let [filename, html] of pages) {
   html = html.replace(/<link href="images\/favicon.webp" rel="shortcut icon" type="image\/x-icon">/, '<link href="images/favicon.webp" rel="icon" type="image/webp">');
   if (filename === 'reservation.html') {
     html = html.replace('<form id="email-form"', '<form aria-describedby="reservation-note" id="email-form"');
-    html = html.replace(/<input type="submit"[^>]*>/, '<input type="submit" class="reservation__button w-button" value="Reservations unavailable online" disabled aria-disabled="true">');
-    html = html.replace('</form>', '</form>\n<p id="reservation-note" class="text_small" role="note">This form does not send requests. To book a table, please <a href="tel:613-217-2746">call 613-217-2746</a> or <a href="mailto:info@sushinami.ca">email info@sushinami.ca</a>.</p>');
+    html = html.replace(/<input type="submit"[^>]*>/, '<input type="submit" class="reservation__button w-button" value="Reservation" disabled aria-disabled="true">');
+    html = html.replace('</form>', '</form>\n<p id="reservation-note" class="text_small" role="note">Demo. This form does not send booking requests.</p>');
     html = html.replace('<script src="js/sushi.js"', '<script src="js/reservation.js" defer></script>\n  <script src="js/sushi.js"');
     // Unique names and IDs are required even while submission is disabled.
     const fields = [
@@ -150,6 +150,8 @@ for (let [filename, html] of pages) {
     for (const [label, name, type, extra] of fields) {
       html = html.replace(new RegExp(`<input[^>]*placeholder="${label}"[^>]*>`), `<input class="reservation__text-field w-input" name="${name}" placeholder="${label}" aria-label="${label}" type="${type}" id="${name}" required${extra}>`);
     }
+    html = html.replace(/<input class="reservation__text-field w-input"[^>]*>/g, input =>
+      input.replace('w-input"', 'w-input w-input-disabled"').replace(/>$/, ' disabled>'));
   }
   // Relative URLs work both at / and at GitHub Pages' /sushi-pages/ prefix.
   if (filename.startsWith('blog/')) {

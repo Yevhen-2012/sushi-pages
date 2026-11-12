@@ -6,7 +6,7 @@ Static migration of https://sushi-7096b4.webflow.io/ using the owner's Webflow Z
 - Six main pages, 15 menu items, and four published blog articles.
 - Draft and archived CMS records are excluded. `content/cms.json` records the published content used by the HTML pages.
 - Images, jQuery, GSAP, Flip and the custom navigation script are hosted locally.
-- Reservation submissions are disabled at the owner's request. The page shows phone and email alternatives. No reservation is sent or stored.
+- The reservation page shows a demo form with disabled fields and submission.
 
 ## Hosting
 
