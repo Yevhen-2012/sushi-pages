@@ -14,6 +14,11 @@
     height: auto;
   }
 
+  .split-page__visual > .hero-heading-position {
+    left: clamp(2rem, 10vw - 5rem, 5rem);
+    font-size: clamp(5rem, 8vw, 7rem);
+  }
+
   .split-page__scroll {
     overflow-y: auto;
     overscroll-behavior-y: contain;
@@ -24,5 +29,54 @@
   .split-page__scroll:focus-visible {
     outline: 1px solid currentColor;
     outline-offset: -2px;
+  }
+
+  .split-page__scroll .reservation__form-block {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .split-page__scroll .content-wraper-text,
+  .split-page__scroll .blog_wrapper-inner {
+    padding-inline: clamp(var(--s-size), 10vw - 5rem, var(--m-size));
+  }
+
+  .split-page__scroll .blog_item-wraper {
+    column-gap: clamp(var(--s-size), 10vw - 5rem, var(--m-size));
+  }
+
+  .split-page__scroll .blog_content-img,
+  .split-page__scroll .blog_text-wraper {
+    min-width: 0;
+  }
+}
+
+@media (991px < width < 1280px) {
+  .split-page__scroll .about_feedback-card {
+    padding-inline: var(--xs-size);
+  }
+
+  .split-page__scroll .awesom-wraper {
+    letter-spacing: var(--xxs);
+  }
+
+  .split-page__scroll .contact_content-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (991px < width < 1200px) {
+  .split-page .menu_content-wraper {
+    gap: var(--xxs);
+  }
+
+  .split-page .menu_text-link,
+  .split-page .menu_img-link {
+    padding-inline: var(--xs-size);
+  }
+
+  .split-page .menu_logo {
+    height: 26px;
   }
 }
