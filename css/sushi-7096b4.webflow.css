@@ -908,9 +908,9 @@
   inset: calc(-1 * var(--xxs)) calc(-1 * var(--s-size));
   z-index: -1;
   pointer-events: none;
-  border: 1px solid var(--base_light_opacity);
   border-radius: var(--xs-size);
-  background: color-mix(in srgb, var(--base_lighte_color_main) 9%, transparent);
+  background: color-mix(in srgb, var(--base_lighte_color_main) 12%, transparent);
+  filter: blur(6px);
   opacity: 0;
   transition: opacity 180ms ease-out;
 }
@@ -918,12 +918,13 @@
 .menu_hidden-link:focus-visible {
   color: #fff;
   outline: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
 }
 
 .menu_hidden-link:focus-visible > .menu_hidden-link-label::before {
   opacity: 1;
-  outline: 1px solid var(--base_lighte_color_main);
-  outline-offset: -1px;
 }
 
 @media (hover: hover) {
