@@ -850,7 +850,20 @@
   padding: var(--s-size);
   border-radius: var(--xs-size);
   color: var(--base_lighte_color_main);
+  font-size: 16px;
   text-decoration: none;
+}
+
+@media (min-width: 1280px) {
+  .menu_text-link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu_text-link {
+    font-size: 20px;
+  }
 }
 
 .menu_text-link:where(.w-variant-194f8d76-4035-224c-2e9e-813966e3839b) {
