@@ -32,10 +32,20 @@
 
 @font-face {
   font-family: Forum;
-  src: url('../fonts/Forum-Regular.ttf') format("truetype");
+  src: url('../fonts/Forum-Regular.woff2') format('woff2'),
+       url('../fonts/Forum-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+/* Keep the primary navigation inside its column while Forum loads. */
+@font-face {
+  font-family: "Forum Navigation Fallback";
+  src: local("Georgia");
+  font-weight: 400;
+  font-style: normal;
+  size-adjust: 82%;
 }
 
 @font-face {
@@ -47,6 +57,7 @@
 }
 
 :root {
+  --font-forum: Forum, Georgia, "Times New Roman", serif;
   --background_black: #0a0a0a;
   --base_lighte_color_main: #efe7d2;
   --sm-size: 1.5rem;
@@ -80,7 +91,7 @@
 .body {
   background-color: var(--background_black);
   color: var(--base_lighte_color_main);
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 16px;
   font-weight: 400;
   line-height: 180%;
@@ -94,7 +105,7 @@
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 64px;
   font-weight: 400;
   line-height: 110%;
@@ -104,7 +115,7 @@
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 40px;
   font-weight: 400;
   line-height: 120%;
@@ -114,7 +125,7 @@
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 32px;
   font-weight: 400;
   line-height: 120%;
@@ -124,7 +135,7 @@
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
@@ -134,7 +145,7 @@
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 22px;
   font-weight: 400;
   line-height: 120%;
@@ -144,7 +155,7 @@
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
@@ -154,7 +165,7 @@
   letter-spacing: 3px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 130px;
   font-weight: 400;
   line-height: 100%;
@@ -164,7 +175,7 @@
   letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 112px;
   font-weight: 400;
   line-height: 100%;
@@ -174,7 +185,7 @@
   letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 96px;
   font-weight: 400;
   line-height: 110%;
@@ -184,7 +195,7 @@
   letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 80px;
   font-weight: 400;
   line-height: 110%;
@@ -208,21 +219,21 @@
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 18px;
   line-height: 150%;
 }
 
 .text_small {
   letter-spacing: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 12px;
   line-height: 130%;
 }
 
 .text_meta {
   letter-spacing: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 14px;
   line-height: 150%;
 }
@@ -441,7 +452,7 @@
   justify-content: center;
   align-items: center;
   height: 5.5rem;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 16px;
 }
 
@@ -848,6 +859,7 @@
 
 .menu_text-link {
   padding: var(--s-size);
+  font-family: Forum, "Forum Navigation Fallback", Georgia, "Times New Roman", serif;
   border-radius: var(--xs-size);
   color: var(--base_lighte_color_main);
   font-size: 16px;
@@ -1100,7 +1112,7 @@
   word-break: normal;
   overflow-wrap: normal;
   margin-bottom: 0;
-  font-family: Forum, Arial, sans-serif;
+  font-family: var(--font-forum);
   font-size: 22px;
   font-weight: 400;
   line-height: 120%;
@@ -1478,6 +1490,7 @@
 
   .blog_wrapper-inner.border.margin-s {
     padding-right: var(--xxs);
+    overflow-wrap: anywhere;
   }
 
   .content_post-body {
@@ -1575,13 +1588,6 @@
 @font-face {
   font-family: 'Fa 400';
   src: url('../fonts/fa-regular-400.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Forum';
-  src: url('../fonts/Forum-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
